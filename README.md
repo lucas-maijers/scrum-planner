@@ -6,10 +6,10 @@
   A platform to organize the plans and roles of a scrum team.
 
 # Team Members
-  * Gianni van Looij - database developer
-  * Justin de Laat - developer
-  * Lucas Maijers - backhand developer
-  * Benjamin luiken - front end developer
+  * Gianni van Looij - Developer Database
+  * Justin de Laat - Developer
+  * Lucas Maijers - Developer Back-End
+  * Benjamin luiken - Developer Front-End
 
 # Features
   * Will do: 
