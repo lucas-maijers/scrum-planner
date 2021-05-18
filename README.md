@@ -2,7 +2,7 @@
 
 **Summary**
 
-**Primary goal**:
+**Primary goal**: 
 **Secondary goal**:
 
 **Team Members**
