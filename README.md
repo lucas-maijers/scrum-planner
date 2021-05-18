@@ -4,7 +4,6 @@
 
 # Primary goal
   A tool to manage scrum team roles and tasks.
-# Secondary goal:
 
 # Team Members
   * Gianni van Looij
