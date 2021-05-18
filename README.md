@@ -3,7 +3,7 @@
 # Summary
 
 # Primary goal
-  A tool to manage scrum team roles and tasks.
+  A platform to organize the plans and roles of a scrum team.
 
 # Team Members
   * Gianni van Looij
