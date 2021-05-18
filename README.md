@@ -16,26 +16,18 @@
     * A login system:
       * to setup users on a project
       * give users account privileges
-    * A ticket system for tasks:
-      * Information
-      * Deadlines
-      * ticket status & priority
-      * placement in project timeline
-      * category placement 
+    * A daily checklist:
+      * Daily tasks
+      * Notifications
+      * Assigned per role
     * A Management panel for:
-      * user accounts to access the tickets 
-      * to see a project timeline and active tickets
+      * User Accounts to assign roles.
+      * To see user information and their checklists
     * A contact system to:
-      * comment on tickets
-      * to send messages to other users
-    * A check system to:
-      * see the what other users are currently doing
-      * to see what tickets have been finished
-      * see the project owners feedback
+      * Send messages to users
   * Wont do:
   * Might do:
     * mindmap to overview feature ideas 
-    * backlog to view closed tickets
     * customizable profile picture
 
 # Communication
