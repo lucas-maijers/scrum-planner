@@ -13,7 +13,8 @@
   * Benjamin luiken
 
 # Features
-  * Will do:
+  * Will do: 
+    *  tasks. dates, deadlines
   * Wont do:
   * Might do:
 
@@ -22,3 +23,30 @@
 
 # Roadmap
   when will features be done
+
+
+
+backlog?
+
+timelines
+
+mindmap
+
+roles -> accounts 
+
+management panel 
+
+check system 
+overview tickets
+
+database management (sql)
+
+ticket system.
+task
+priority
+status (to do complete etc)
+connect accounts to tickets
+comment system
+feature listing (approved by project owner)
+
+contact system
