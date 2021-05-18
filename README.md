@@ -6,10 +6,10 @@
 ## Secondary goal:
 
 ## Team Members
-  #### *Gianni van Looij
-  #### *Justin de Laat
-  #### *Lucas Maijers
-  #### *Benjamin luiken
+  * Gianni van Looij
+  * Justin de Laat
+  * Lucas Maijers
+  * Benjamin luiken
 
 ## Features
   ### Will do:
