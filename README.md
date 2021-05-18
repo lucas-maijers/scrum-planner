@@ -14,7 +14,9 @@
 
 # Features
   * Will do: 
-    *  tasks. dates, deadlines
+    * A ticket system for tasks:
+      * Information
+      * Deadlines
   * Wont do:
   * Might do:
 
