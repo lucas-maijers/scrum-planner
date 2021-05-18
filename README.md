@@ -13,9 +13,9 @@
   * Benjamin luiken
 
 # Features
-  ## Will do:
-  ## Wont do:
-  ## Might do:
+  * Will do:
+  * Wont do:
+  * Might do:
 
 # Communication
   when do we meet/how do we update each other
