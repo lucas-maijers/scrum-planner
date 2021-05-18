@@ -1,23 +1,23 @@
-# scrum-planner
+# Scrum-Planner
 
-**Summary**
+## Summary
 
-**Primary goal**: 
-**Secondary goal**:
+## Primary goal: 
+## Secondary goal:
 
-**Team Members**
+## Team Members
   *Gianni van Looij
   *Justin de Laat
   *Lucas Maijers
   *Benjamin luiken
 
-**Features**
-  **Will do:**
-  **Wont do:**
-  **Might do:**
+## Features
+  ### Will do:
+  ### Wont do:
+  ### Might do:
 
-**Communication**
+## Communication
   when do we meet/how do we update each other
 
-**Roadmap**
+## Roadmap
   when will features be done
