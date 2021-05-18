@@ -22,6 +22,7 @@
       * Deadlines
       * ticket status & priority
       * placement in project timeline
+      * category placement 
     * A Management panel for:
       * user accounts to access the tickets 
       * to see a project timeline and active tickets
