@@ -3,7 +3,7 @@
 # Summary
 
 # Primary goal
-  A tool for project management.
+  A tool to manage scrum team roles and tasks.
 # Secondary goal:
 
 # Team Members
