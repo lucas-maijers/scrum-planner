@@ -34,10 +34,10 @@
       * to see what tickets have been finished
       * see the project owners feedback
   * Wont do:
-    * 
   * Might do:
     * mindmap to overview feature ideas 
     * backlog to view closed tickets
+    * customizable profile picture
 
 # Communication
   * Dev Team has 2 meetings each sprint (planning on tuesday and review on friday
