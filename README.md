@@ -34,6 +34,7 @@
       * to see what tickets have been finished
       * see the project owners feedback
   * Wont do:
+    * List of people currently online
   * Might do:
     * mindmap to overview feature ideas 
     * backlog to view closed tickets
