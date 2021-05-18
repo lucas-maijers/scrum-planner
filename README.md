@@ -30,18 +30,18 @@
       * Send messages to users
   * Won't do:
   * Might do:
-    * mindmap to overview feature ideas 
-    * customizable profile picture
+    * Mindmap to overview feature ideas 
+    * Customizable profile picture
 
 # Communication
-  * Dev Team has 2 meetings each sprint (planning on tuesday and review on friday
+  * Dev Team has 2 meetings each sprint (planning on Tuesday and review on Friday)
 
 # Roadmap
-  * ERD                        week 1
-  * Design frontend            week 1
-  * Wire frame                 week 1
-  * Presentatie prototype      week 1
-  * Presentatie with feed back week 2
-  * Database                   week 2
+  * ERD                         Week 1
+  * Design frontend             Week 1
+  * Wire frame                  Week 1
+  * Presentatie prototype       Week 1
+  * Presentatie with feedback   Week 2
+  * Database                    Week 2
   
   
