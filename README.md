@@ -7,9 +7,9 @@
 
 # Team Members
   * Gianni van Looij - Developer Database
-  * Justin de Laat - Developer
+  * Justin de Laat - Developer All-Round
   * Lucas Maijers - Developer Back-End
-  * Benjamin luiken - Developer Front-End
+  * Benjamin Luiken - Developer Front-End
 
 # Features
   * Will do: 
@@ -23,9 +23,10 @@
     * A Management panel for:
       * User Accounts to assign roles.
       * To see user information and their checklists
+      * Create custom roles
     * A contact system to:
       * Send messages to users
-  * Wont do:
+  * Won't do:
   * Might do:
     * mindmap to overview feature ideas 
     * customizable profile picture
