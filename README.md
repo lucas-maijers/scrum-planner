@@ -21,7 +21,9 @@
       * Notifications
       * Assigned per role
     * A Management panel for:
-      * User Accounts to assign roles.
+      * Assigning roles to users
+      * Creating user accounts
+      * Assign tasks
       * To see user information and their checklists
       * Create custom roles
     * A contact system to:
