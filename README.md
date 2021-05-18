@@ -17,5 +17,7 @@ Wont do
 Might do
 
 Communication
+when do we meet/how do we update each other
 
 roadmap
+when will features be done
