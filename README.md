@@ -37,4 +37,11 @@
   * Dev Team has 2 meetings each sprint (planning on tuesday and review on friday
 
 # Roadmap
-  when will features be done
+  ERD                        week 1
+  design frontend            week 1
+  wire frame                 week 1
+  presentatie prototype      week 1
+  presentatie with feed back week 2
+  Database                   week 2
+  
+  
