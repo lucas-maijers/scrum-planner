@@ -7,39 +7,39 @@
 
 # Team Members
   * Gianni van Looij - Developer Database
-  * Justin de Laat - Developer
+  * Justin de Laat - Developer All-Round
   * Lucas Maijers - Developer Back-End
-  * Benjamin luiken - Developer Front-End
+  * Benjamin Luiken - Developer Front-End
 
 # Features
   * Will do: 
     * A login system:
       * to setup users on a project
       * give users account privileges
-    * A ticket system for tasks:
-      * Information
-      * Deadlines
-      * ticket status & priority
-      * placement in project timeline
-      * category placement 
+    * A daily checklist:
+      * Daily tasks
+      * Notifications
+      * Assigned per role
     * A Management panel for:
-      * user accounts to access the tickets 
-      * to see a project timeline and active tickets
+      * Assigning roles to users
+      * Creating user accounts
+      * Assign tasks
+      * To see user information and their checklists
+      * Create custom roles
     * A contact system to:
-      * comment on tickets
-      * to send messages to other users
-    * A check system to:
-      * see the what other users are currently doing
-      * to see what tickets have been finished
-      * see the project owners feedback
-  * Wont do:
+      * Send messages to users
+  * Won't do:
   * Might do:
-    * mindmap to overview feature ideas 
-    * backlog to view closed tickets
-    * customizable profile picture
+    * Mindmap to overview feature ideas 
+    * Customizable profile picture
 
 # Communication
-  * Dev Team has 2 meetings each sprint (planning on tuesday and review on friday
+  * Dev Team has 2 meetings each sprint (planning on Tuesday and review on Friday)
 
 # Roadmap
-  when will features be done
+  * Database & frontend  prototype (Week 1)
+  * basic application              (Week 2)
+  * login function                 (week 3)
+  * testing & debugging            (week 4)
+  * adding and refining features   (week 5 & 6)
+  
