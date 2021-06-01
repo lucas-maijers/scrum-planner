@@ -3,12 +3,14 @@ package me.scrumteam3.scrumplanner.controller;
 import me.scrumteam3.scrumplanner.database.entities.User;
 import me.scrumteam3.scrumplanner.database.repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 @Controller
-@RequestMapping(path = "/demo")
+@RequestMapping(path = "/adminpanel")
 public class DatabaseController {
+
     @Autowired
     private UserRepository userRepository;
 
