@@ -2,65 +2,128 @@
   <head>
     <style>
 
+      * {
+        background-color: rgba(76, 109, 175);
+        color: white;
+      }
+
       section#Plannertasks {
         font-size: 30px;
-        width: 50%;
+        width: 10%;
         float: left;
+        padding-left: 30%;
       }
+
       section#Planneremployee {
         font-size: 30px;
-        width: 50%;
+        width: 35%;
         float: right;
+        padding-left: 25%;
       }
+
+      section#Teamlist {
+        font-size: 30px;
+        width: 60%;
+        padding-top: 250px;
+        padding-left: 40%
+      }
+
       form {
-        width: 100%
+        width: 60%;
+        color: white;
+        padding-left: 40%
+      }
+
+      form#middle {
+        width: 70%;
+        color: white;
+        padding-left: 30%;
+        padding-bottom: 100px;
+      }
+
+      input {
+        background-color: white;
+        color: black;
+      }
+
+      h1 {
+        text-align: center;
+        width: 70%;
+        margin-left: 15%;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        background-color: rgba(136, 159, 255);
+      }
+
+      header h1 {
+        text-align: center;
+        width: 100%;
+        margin-left: 0px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        background-color: rgba(136, 159, 255);
       }
 
     </style>
   </head>
   <body>
-    <h1>admin page</h1>
-    <h1> Planning assignment </h1>
+    <header>
+      <h1>admin page</h1> <br>
+    </header>
+      <h1> Planning assignment </h1> <br>
     <section id="Plannertasks">
-        task 1 <br>
-        task 2 <br>
-        task 3 <br>
-        task 4 <br>
-        task 5 <br>
+        task 1<br>
+        task 2<br>
+        task 3<br>
+        task 4<br>
+        task 5<br>
     </section>
+
     <section id="Planneremployee">
-        employee 1 <br>
-        employee 2 <br>
-        employee 3 <br>
-        employee 4 <br>
-        employee 5 <br>
+        employee 1<br>
+        employee 2<br>
+        employee 3<br>
+        employee 4<br>
+        employee 5<br>
     </section>
+
+    <section id="Teamlist">
+        Team 1: <br>employee 2 employee 5 <br>
+        Team 1's tasks: <br>task 1 task 4 <br>
+        <br>
+        Team 2: <br>employee 1 employee 3 employee 4 <br>
+        Team 2's tasks: <br>task 2 task 3 task 5 <br>
+    </section>
+
     <section id="Newtask">
       <h1>Add new tasks</h1>
       <form>
-        <label for="Newtask">Task name</label>
+        <label for="Newtask">Task name:</label>
         <input class="textinputs" type="text" name="Newtask" id="Newtask">
-
-        <input type="button" name"login">
-
+        <input type="button">
 
       </form>
     </section>
     <section id="Newuser">
       <h1>Add new users</h1>
       <list>
-        <form>
-          <label for="Username">Username</label>
+        <form id="middle">
+          <label for="Username">Username:</label>
           <input class="textinputs" type="text" name="Username" id="Username">
 
           <label fpr="pwd">Password:</label>
           <input type="password" name="pwd" value="">
 
-          <input type="button" name"login">
-
-
+          <input type="button">
         </form>
       </list>
     </section>
+
+    <script>
+
+
+
+    </script>
+
   </body>
 </html>
