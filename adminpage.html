@@ -1,6 +1,9 @@
 <html>
   <head>
     <link rel="stylesheet" href="admin.css">
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   </head>
   <body>
     <header>
@@ -36,7 +39,9 @@
       <form>
         <label for="Newtask">Task name:</label>
         <input class="textinputs" type="text" name="Newtask" id="Newtask">
-        <input type="button">
+        <button class="mdc-button mdc-button--raised">
+          <span class="mdc-button__label">Add new task</span>
+        </button>
 
       </form>
     </section>
@@ -50,7 +55,9 @@
           <label fpr="pwd">Password:</label>
           <input type="password" name="pwd" value="">
 
-          <input type="button">
+          <button class="mdc-button mdc-button--raised">
+            <span class="mdc-button__label">Add new employee</span>
+          </button>
         </form>
       </list>
     </section>
