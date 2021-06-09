@@ -1,12 +1,13 @@
 * {
   text-decoration-style: none !important;
   margin-top: 2px;
-  margin-bottom: 2px;
+  margin-bottom: 10px;
 }
 body {
-  background-color: rgba(76, 109, 175);
+  background-color: gold;
   color: white;
   font-family: "Montserrat", sans-serif;
+  margin-top: 300px;
 }
 section#Plannertasks {
   font-size: 30px;
@@ -66,23 +67,23 @@ header h1 {
   margin-top: 5px;
 }
 #eye {
-  margin-left: 188px;
-}
-@media only screen and (max-width: 480px) {
-  body {
-    background-color: gold;
-    color: white;
-  }
-}
-@media only screen and (max-width: 768px) {
+  margin-left: 183px;
+  margin-top: -0px;
+  color: black;
+  opacity: 40%;
+} /* tablet*/
+@media all and (min-device-width: 767px) {
   body {
     background-color: seagreen;
     color: white;
   }
-}
-@media only screen and (max-width: 1279px) {
+} /* laptop screen*/
+@media all and (min-device-width: 1200px) {
   body {
-    background-color: brown;
+    margin-top: 0px;
+    background-color: rgba(76, 109, 175);
     color: white;
+  }
+  #eye {
   }
 }

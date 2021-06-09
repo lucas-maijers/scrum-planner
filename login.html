@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en" dir="ltr" xmlns:th="http://www.thymeleaf.org">
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
@@ -12,14 +12,14 @@
     </head>
    <body>
     <h1>Login page</h1>
-    <!-- <p th:if="${loginError}" class="error">Wrong user or password</p> -->
+    <p th:if="${loginError}" class="error">Wrong user or password</p>
     <!--email-->
     <form th:action="@{/login.html}" method="post">
       <label class="mdc-text-field mdc-text-field--outlined">
         <span class="mdc-notched-outline">
           <span class="mdc-notched-outline__leading"></span>
           <span class="mdc-notched-outline__notch">
-            <span class="mdc-floating-label" id="my-label-id">email</span>
+            <span class="mdc-floating-label" id="my-label-id">Email</span>
           </span>
           <span class="mdc-notched-outline__trailing"></span>
         </span>
@@ -31,7 +31,7 @@
         <span class="mdc-notched-outline">
           <span class="mdc-notched-outline__leading"></span>
           <span class="mdc-notched-outline__notch">
-            <span class="mdc-floating-label" id="my-label-id">password</span>
+            <span class="mdc-floating-label" id="my-label-id">Password</span>
             <i id="eye" class="material-icons mdc-button_icon">
               visibility
             </i>
@@ -42,10 +42,11 @@
       </label>
       <br>
       <!-- button-->
+      
       <div class="mb">
-        <button class="mdc-button mdc-button--raised">
-          log in
-        </button>
+        <a class="mdc-button mdc-button--raised" href="adminpage.html"> 
+          login 
+        </a>
       </div>
     </form>
   </body>
