@@ -1,4 +1,4 @@
-package me.scrumteam3.scrumplanner.database.entities;
+package me.scrumteam3.scrumplanner.data;
 
 import javax.persistence.*;
 

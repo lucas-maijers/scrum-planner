@@ -3,25 +3,23 @@ package me.scrumteam3.scrumplanner.controller;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 public class WebController {
 
     @RequestMapping("/")
-    @ResponseBody
     public String index() {
-        return "Wow, you made it";
+        return "redirect:/adminpanel";
     }
 
-    @RequestMapping("/login.html")
+    @RequestMapping("/login")
     public String login() {
-        return "login.html";
+        return "login";
     }
 
-    @RequestMapping("/login-error.html")
+    @RequestMapping("/login-error")
     public String loginError(Model model) {
         model.addAttribute("loginError", true);
-        return "login.html";
+        return "login";
     }
 }
