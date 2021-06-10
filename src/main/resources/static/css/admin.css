@@ -1,49 +1,51 @@
 * {
-    text-decoration-style: none !important;
-    margin-top: 2px;
-    margin-bottom: 10px;
-}
-body {
-    background-color: gold;
+    background-color: rgba(76, 109, 175);
     color: white;
-    font-family: "Montserrat", sans-serif;
-    margin-top: 300px;
 }
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
 section#Plannertasks {
     font-size: 30px;
     width: 10%;
     float: left;
     padding-left: 30%;
 }
+
 section#Planneremployee {
     font-size: 30px;
     width: 35%;
     float: right;
     padding-left: 25%;
 }
+
 section#Teamlist {
     font-size: 30px;
     width: 60%;
     padding-top: 250px;
-    padding-left: 40%;
+    padding-left: 40%
 }
+
 form {
     width: 60%;
     color: white;
-    padding-left: 40%;
-    margin-bottom: 5px;
+    padding-left: 40%
 }
+
 form#middle {
     width: 70%;
     color: white;
     padding-left: 30%;
     padding-bottom: 100px;
 }
+
 input {
     background-color: white;
     color: black;
-    margin-left: 3px;
 }
+
 h1 {
     text-align: center;
     width: 70%;
@@ -52,6 +54,7 @@ h1 {
     padding-bottom: 25px;
     background-color: rgb(136, 159, 255);
 }
+
 header h1 {
     text-align: center;
     width: 100%;
@@ -59,31 +62,4 @@ header h1 {
     padding-top: 25px;
     padding-bottom: 25px;
     background-color: rgb(136, 159, 255);
-}
-.mdc-floating-label {
-    color: rgb(0, 255, 76);
-}
-.mb {
-    margin-top: 5px;
-}
-#eye {
-    margin-left: 183px;
-    margin-top: -0px;
-    color: black;
-    opacity: 40%;
-} /* tablet*/
-@media all and (min-device-width: 767px) {
-    body {
-        background-color: seagreen;
-        color: white;
-    }
-} /* laptop screen*/
-@media all and (min-device-width: 1200px) {
-    body {
-        margin-top: 0;
-        background-color: rgb(76, 109, 175);
-        color: white;
-    }
-    #eye {
-    }
 }

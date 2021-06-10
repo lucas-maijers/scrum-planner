@@ -2,14 +2,17 @@ package me.scrumteam3.scrumplanner.services;
 
 import lombok.AllArgsConstructor;
 import me.scrumteam3.scrumplanner.entities.User;
+import me.scrumteam3.scrumplanner.repositories.RoleRepository;
 import me.scrumteam3.scrumplanner.repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
 import java.text.MessageFormat;
+import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -18,6 +21,9 @@ public class CustomUserDetailsService implements UserDetailsService {
 
     @Autowired
     private UserRepository userRepository;
+
+    @Autowired
+    private RoleRepository roleRepository;
 
     public CustomUserDetailsService() {
 
