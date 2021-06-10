@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr" xmlns:th="http://www.thymeleaf.org">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -12,7 +12,6 @@
     </head>
    <body>
     <h1>Login page</h1>
-    <p th:if="${loginError}" class="error">Wrong user or password</p>
     <!--email-->
     <form th:action="@{/login.html}" method="post">
       <label  class="mdc-text-field mdc-text-field--outlined"for="username">Username:
@@ -39,15 +38,12 @@
       </label>
       <br>
       <!-- button-->
-      
-      <div class="mb">
-        <a class="mdc-button mdc-button--raised" href="adminpage.html"> 
-          login 
-        </a>
-      </div>
+      <input class="mdc-button mdc-button--raised" id="submit" type="submit" value="Log in" />
     </form>
     <p th:if="${loginError}" class="error">Wrong user or password</p>
   </body>
 </html>
 
 
+
+    
