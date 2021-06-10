@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <link href="admin.css" rel="stylesheet">
+        <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+        <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <title>Admin Panel</title>
+    </head>
+    <body>
+    <header>
+        <h1>admin page</h1> <br>
+    </header>
+    <h1> Planning assignment </h1> <br>
+    <section id="Plannertasks">
+        task 1<br>
+        task 2<br>
+        task 3<br>
+        task 4<br>
+        task 5<br>
+    </section>
+
+    <section id="Planneremployee">
+        employee 1<br>
+        employee 2<br>
+        employee 3<br>
+        employee 4<br>
+        employee 5<br>
+    </section>
+
+    <section id="Teamlist">
+        Team 1: <br>employee 2 employee 5 <br>
+        Team 1's tasks: <br>task 1 task 4 <br>
+        <br>
+        Team 2: <br>employee 1 employee 3 employee 4 <br>
+        Team 2's tasks: <br>task 2 task 3 task 5 <br>
+    </section>
+
+    <section id="newtask">
+        <h1>Add new tasks</h1>
+        <form>
+            <label for="Newtask">Task name:</label>
+            <input class="textinputs" id="Newtask" name="Newtask" type="text">
+            <button class="mdc-button mdc-button--raised">
+                <span class="mdc-button__label">Add new task</span>
+            </button>
+
+        </form>
+    </section>
+    <section id="newuser">
+        <h1>Add new users</h1>
+        <list>
+            <form id="middle" th:action="@{/adminpanel/addUser}" method="post">
+                <label for="username">Username:</label>
+                <input class="textinputs" id="username" name="username" type="text">
+
+                <label for="role">Role</label>
+                <select class="form-control" th:field="*{roles}" name="role" id="role">
+                    <option value="0">Select Role</option>
+                    <option th:each="role :  ${roles}" th:value="${role.id}" th:text="${role.name}"></option>
+                </select>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" class="textinputs">
+
+                <label for="password">Password:</label>
+                <input name="password" type="password" id="password">
+
+                <button class="mdc-button mdc-button--raised">
+                    <span class="mdc-button__label">Add User</span>
+                    <input type="hidden" id="submit" value="submit">
+                </button>
+            </form>
+        </list>
+    </section>
+
+    <script>
+
+
+    </script>
+
+    </body>
+</html>

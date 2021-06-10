@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" th:href="@{/css/login.css}">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+        <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+        <title>Login page</title>
+    </head>
+    <body>
+        <h1>Login page</h1>
+        <!--email-->
+        <form th:action="@{/login}" method="post">
+            <label  class="mdc-text-field mdc-text-field--outlined" for="username">Username:
+                <span class="mdc-notched-outline">
+          <span class="mdc-notched-outline__leading"></span>
+          <span class="mdc-notched-outline__notch">
+
+          </span>
+          <span class="mdc-notched-outline__trailing"></span>
+            </span>
+                    <input type="text" id="username" name="username" autofocus="autofocus"  class="mdc-text-field__input" aria-labelledby="my-label-id" required>
+                </label>
+                <br>
+                <!--password-->
+                <label  class="mdc-text-field mdc-text-field--outlined" for="password">Password:
+                    <span class="mdc-notched-outline">
+              <span class="mdc-notched-outline__leading"></span>
+              <span class="mdc-notched-outline__notch">
+               <!--- <i id="eye" class="material-icons mdc-button_icon">visibility</i> --->
+              </span>
+              <span class="mdc-notched-outline__trailing"></span>
+            </span>
+                    <input type="password" class="mdc-text-field__input" aria-labelledby="my-label-id" id="password" name="password" required>
+                </label>
+                <br>
+                <!-- button-->
+                <input class="mdc-button mdc-button--raised" id="submit" type="submit" value="Log in" />
+        </form>
+        <p th:if="${loginError}" class="error">Wrong user or password</p>
+    </body>
+</html>
+
