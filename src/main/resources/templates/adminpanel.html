@@ -31,11 +31,11 @@
     </section>
 
     <section id="Teamlist">
-        Team 1: <br>employee 2 employee 5 <br>
-        Team 1's tasks: <br>task 1 task 4 <br>
+        Team 1: <br>Employee 2 - Employee 5 <br>
+        Team 1's tasks: <br>task 1 - task 4 <br>
         <br>
-        Team 2: <br>employee 1 employee 3 employee 4 <br>
-        Team 2's tasks: <br>task 2 task 3 task 5 <br>
+        Team 2: <br>employee 1 - employee 3 - employee 4 <br>
+        Team 2's tasks: <br>task 2 - task 3 - task 5 <br>
     </section>
 
     <section id="newtask">
@@ -51,15 +51,16 @@
     </section>
     <section id="newuser">
         <h1>Add New Users</h1>
+        <p th:if="${userAdded}" class="success">User created</p>
         <list>
-            <form id="middle" th:action="@{/adminpanel/addUser}" method="post">
+            <form id="middle" th:action="@{/adminpanel}" method="post">
                 <label for="username">Username:</label>
                 <input class="textinputs" id="username" name="username" type="text">
 
                 <label for="role">Role</label>
-                <select class="form-control" th:field="*{roles}" name="role" id="role">
+                <select class="form-control" name="role" id="role" required>
                     <option value="0">Select Role</option>
-                    <option th:each="role :  ${roles}" th:value="${role.id}" th:text="${role.name}"></option>
+                    <option th:each="role : ${roles}" th:value="${role.id}" th:text="${role.name}"></option>
                 </select>
 
                 <label for="email">Email:</label>
@@ -70,7 +71,7 @@
 
                 <button class="mdc-button mdc-button--raised">
                     <span class="mdc-button__label">Add User</span>
-                    <input type="hidden" id="submit" value="submit">
+                    <input class="form-control" type="hidden" id="submit" value="submit">
                 </button>
             </form>
         </list>

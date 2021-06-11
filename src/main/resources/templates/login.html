@@ -12,7 +12,7 @@
     </head>
     <body>
         <h1>Login page</h1>
-        <!--email-->
+        <p th:if="${loginError}" class="error">Wrong user or password</p>
         <form th:action="@{/login}" method="post">
             <label  class="mdc-text-field mdc-text-field--outlined" for="username">Username:
                 <span class="mdc-notched-outline">
@@ -40,7 +40,6 @@
                 <!-- button-->
                 <input class="mdc-button mdc-button--raised" id="submit" type="submit" value="Log in" />
         </form>
-        <p th:if="${loginError}" class="error">Wrong user or password</p>
     </body>
 </html>
 

@@ -25,35 +25,36 @@ public class AdminPageController {
     @Autowired
     private RoleRepository roleRepository;
 
-    @Autowired
     private BCryptPasswordEncoder encoder;
 
     @GetMapping
-    public String main(Model model) {
-        List<Role> roles = new ArrayList<>();
-        for (Role role: roleRepository.findAll()) {
-            roles.add(role);
-        }
-        model.addAttribute("roles", roles);
+    public String launchPage(Model model) {
+        model.addAttribute("roles", roleRepository.findAll());
         return "adminpanel";
     }
 
-    @PostMapping(path = "/addUser")
-    public @ResponseBody String addNewUser(@RequestParam String username, @RequestParam Integer role, @RequestParam String email, @RequestParam String password) {
+    @RequestMapping(method = RequestMethod.POST)
+    public String addNewUser(@RequestParam String username, @RequestParam Integer role, @RequestParam String email, @RequestParam String password, Model model) {
         User user = new User();
         user.setUsername(username);
-        user.setRole(roleRepository.findById(role).get().getId());
+        user.setRole(role);
         user.setEmail(email);
         user.setPassword(password);
         String encodedPassword = encoder.encode(user.getPassword());
         user.setPassword(encodedPassword);
         userRepository.save(user);
-        return "User added with Username: " + username;
+        model.addAttribute("userAdded", true);
+        return "adminpanel";
     }
 
     @GetMapping(path = "/all")
     public @ResponseBody
     Iterable<User> getAllUsers() {
         return userRepository.findAll();
+    }
+
+    @GetMapping(path = "/allroles")
+    public @ResponseBody Iterable<Role> getAllRoles() {
+        return roleRepository.findAll();
     }
 }

@@ -14,6 +14,10 @@ public class Role {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
 
+    public Integer getId() {
+        return id;
+    }
+
     @Column(name = "name")
     private String name;
 
