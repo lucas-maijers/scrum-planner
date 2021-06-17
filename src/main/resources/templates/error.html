@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  <meta charset="utf-8">
+  <title>Error page</title>
+  <link rel="stylesheet" href="../static/style.css">
+  <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> moet deze hier? -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+  <title>Error page</title>
+</head>
+
+<body th:with="httpStatus=${T(org.springframework.http.HttpStatus).valueOf(#response.status)}">
+  <h1 th:text="|${httpStatus} - ${httpStatus.reasonPhrase}|">404</h1>
+  <p th:utext="${errorMessage}">Error java.lang.NullPointerException</p>
+  <a href="index.html">
+    <button class="mdc-button mdc-button--raised">
+      <span class="mdc-button__ripple"></span>
+      <i class="material-icons mdc-button__icon" aria-hidden="true">bookmark</i>
+      <span class="mdc-button__label">Contained Button plus Icon</span>
+    </button>
+  </a>
+</body>
+
+</html>

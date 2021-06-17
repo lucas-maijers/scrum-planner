@@ -1,0 +1,43 @@
+* {
+  background-color: rgba(76, 109, 175);
+  color: white;
+  margin: 0;
+}
+h1 {
+  text-align: center;
+  width: 70%;
+  margin-left: 15%;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color: rgba(136, 159, 255);
+}
+
+header h1 {
+  text-align: center;
+  width: 100%;
+  margin-left: 0px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color: rgba(136, 159, 255);
+}
+
+section#Teamlist {
+  font-size: 30px;
+  width: 60%;
+  padding-top: 50px;
+  padding-left: 40%;
+}
+
+section#Plannertasks {
+  font-size: 30px;
+  width: 10%;
+  float: left;
+  padding-left: 30%;
+}
+
+section#Planneremployee {
+  font-size: 30px;
+  width: 35%;
+  float: right;
+  padding-left: 25%;
+}
