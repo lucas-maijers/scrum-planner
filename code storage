@@ -1,0 +1,35 @@
+Adding Tasks Below Each Other
+
+var newtask = document.getElementById("Newtask");
+var paragraph = document.getElementById("p");
+var linebreak = document.createElement("br");
+var lb = '<br>';
+var text = document.createTextNode(`employee 6`);
+
+paragraph.appendChild(new_task);
+paragraph.appendChild(linebreak);
+
+var paragraph = document.getElementById("p");
+var text = document.createTextNode(` employee 7`);
+paragraph.appendChild(text);
+
+___________________________________________________________________________
+
+ onclick="Adding_New_Tasks();"
+___________________________________________________________________________
+ src="test.js" defer
+___________________________________________________________________________
+
+
+
+      function Adding_New_Tasks(){
+        var task_identify = document.getElementById("task").value;
+        var text = document.createTextNode(task_identify);
+        console.log(text)
+        paragraph.appendChild(text);
+        paragraph.appendChild(linebreak);
+      }
+
+___________________________________________________________________________
+class="mdc-button mdc-button--raised"
+<span class="mdc-button__label">Add new task</span>

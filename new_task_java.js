@@ -22,7 +22,6 @@ function add_user(){
   paragraph.appendChild(user_identify);
   paragraph.appendChild(linebreak);
 }
-
 Tasks.forEach(function(item) {
   var paragraph = document.getElementById("Plannertasks");
   var task_identify = document.createTextNode(item);
