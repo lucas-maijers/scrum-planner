@@ -1,71 +1,248 @@
-<html>
-  <head>
-    <link rel="stylesheet" href="admin.css">
-    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
-    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  </head>
-  <body>
-    <header>
-      <h1>admin page</h1> <br>
-    </header>
+<!DOCTYPE html>
+  <html lang="en" dir="ltr"> <!-- xmlns:th="http://www.thymeleaf.org"  thymeleaf in admin-->
+    <head>
+      <link rel="stylesheet" href="stylesheets/admin.css">
+     <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+      <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    </head>
+
+    <body>
+      <header>
+        <h1>admin page</h1> <br>
+      </header>
       <h1> Planning assignment </h1> <br>
-    <section id="Plannertasks">
-        task 1<br>
-        task 2<br>
-        task 3<br>
-        task 4<br>
-        task 5<br>
-    </section>
+      <!--task employee table-->
+      <div class="mdc-data-table">
+        <div class="mdc-data-table__table-container">
+          <table class="mdc-data-table__table" aria-label="Dessert calories">
+            <thead>
+              <tr class="mdc-data-table__header-row">
+                <th class="mdc-data-table__header-cell" role="columnheader" scope="col">Task</th>
+                <th class="mdc-data-table__header-cell" role="columnheader" scope="col">Employee</th>
+              </tr>
+            </thead>
+            <tbody class="mdc-data-table__content">
+              <tr class="mdc-data-table__row">
+                <th class="mdc-data-table__cell" scope="row">employee 1</th>
+                <td class="mdc-data-table__cell mdc-data-table__cell--numeric">task 1</td>
+              </tr>
+              <tr class="mdc-data-table__row">
+                <th class="mdc-data-table__cell" scope="row">employee 2</th>
+                <td class="mdc-data-table__cell mdc-data-table__cell--numeric">task 2</td>
+              </tr>
+              <tr class="mdc-data-table__row">
+                <th class="mdc-data-table__cell" scope="row">employee 3</th>
+                <td class="mdc-data-table__cell mdc-data-table__cell--numeric">task 3</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <!--task team 1 table-->
+      <div class="mdc-data-table">
+        <div class="mdc-data-table__table-container">
+          <table class="mdc-data-table__table" aria-label="Dessert calories">
+            <thead>
+              <tr class="mdc-data-table__header-row">
+                <th class="mdc-data-table__header-cell" role="columnheader" scope="col">Team 1</th>
+                <th class="mdc-data-table__header-cell" role="columnheader" scope="col">Employee</th>
+              </tr>
+            </thead>
+            <tbody class="mdc-data-table__content">
+              <tr class="mdc-data-table__row">
+                <th class="mdc-data-table__cell" scope="row">employee 1</th>
+                <td class="mdc-data-table__cell mdc-data-table__cell--numeric">employee 1</td>
+              </tr>
+              <tr class="mdc-data-table__row">
+                <th class="mdc-data-table__cell" scope="row">employee 2</th>
+                <td class="mdc-data-table__cell mdc-data-table__cell--numeric">employee 2</td>
+              </tr>
+              <tr class="mdc-data-table__row">
+                <th class="mdc-data-table__cell" scope="row">employee 3</th>
+                <td class="mdc-data-table__cell mdc-data-table__cell--numeric">employee 3</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <!--task team 2 table-->
+      <div class="mdc-data-table">
+        <div class="mdc-data-table__table-container">
+          <table class="mdc-data-table__table" aria-label="Dessert calories">
+            <thead>
+              <tr class="mdc-data-table__header-row">
+                <th class="mdc-data-table__header-cell" role="columnheader" scope="col">Team 2</th>
+                <th class="mdc-data-table__header-cell" role="columnheader" scope="col">Employee</th>
+              </tr>
+            </thead>
+            <tbody class="mdc-data-table__content">
+              <tr class="mdc-data-table__row">
+                <th class="mdc-data-table__cell" scope="row">employee 1</th>
+                <td class="mdc-data-table__cell mdc-data-table__cell--numeric">employee 1</td>
+              </tr>
+              <tr class="mdc-data-table__row">
+                <th class="mdc-data-table__cell" scope="row">employee 2</th>
+                <td class="mdc-data-table__cell mdc-data-table__cell--numeric">employee 2</td>
+              </tr>
+              <tr class="mdc-data-table__row">
+                <th class="mdc-data-table__cell" scope="row">employee 3</th>
+                <td class="mdc-data-table__cell mdc-data-table__cell--numeric">employee 3</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+       <!--add task table-->
+       <div class="mdc-data-table">
+        <div class="mdc-data-table__table-container">
+          <table class="mdc-data-table__table" aria-label="Dessert calories">
+            <thead>
+              <tr class="mdc-data-table__header-row">
+                <th class="mdc-data-table__header-cell" role="columnheader" scope="col">Task name</th>
+                <th class="mdc-data-table__header-cell" role="columnheader" scope="col">submit</th>
+              </tr>
+            </thead>
+            <tbody class="mdc-data-table__content">
+              <tr class="mdc-data-table__row">
+                <th form method="post">
+                  <!--task name-->
+         <label class="mdc-text-field mdc-text-field--outlined" for="task">task:
+           <span class="mdc-notched-outline">
+             <span class="mdc-notched-outline__leading"></span>
+             <span class="mdc-notched-outline__notch"></span>
+             <span class="mdc-notched-outline__trailing"></span>
+           </span>
+           <input type="text" id="task" name="task" autofocus="autofocus" class="mdc-text-field__input" aria-labelledby="my-label-id">
+         </label></th>
+         <!--button-->
+                <td>
+                  <input class="mdc-button mdc-button--raised" id="submit" type="submit" value="add task" />
+                </form>
+              </section></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
 
-    <section id="Planneremployee">
-        employee 1<br>
-        employee 2<br>
-        employee 3<br>
-        employee 4<br>
-        employee 5<br>
-    </section>
+          <!--add task table-->
+       <div class="mdc-data-table">
+        <div class="mdc-data-table__table-container">
+          <table class="mdc-data-table__table" aria-label="Dessert calories">
+            <thead>
+              <tr class="mdc-data-table__header-row">
+                <th class="mdc-data-table__header-cell" role="columnheader" scope="col">Team</th>
+                <th class="mdc-data-table__header-cell" role="columnheader" scope="col">User</th>
+                <th class="mdc-data-table__header-cell" role="columnheader" scope="col">Submit</th>
+              </tr>
+            </thead>
+            <tbody class="mdc-data-table__content">
+              <tr class="mdc-data-table__row">
+                <th form method="post">
+                  <!--username-->
+                  <form id="add-user" method="post">
+                  <label class="mdc-text-field mdc-text-field--outlined" for="new username">Team:
+                    <span class="mdc-notched-outline">
+                      <span class="mdc-notched-outline__leading"></span>
+                      <span class="mdc-notched-outline__notch"></span>
+                      <span class="mdc-notched-outline__trailing"></span>
+                    </span>
+                    <input type="text" id="new-username" name="new username" autofocus="autofocus" class="mdc-text-field__input"aria-labelledby="my-label-id">
+                  </label>
+                  <!--Password-->
+                  <th><!--password-->
+                    <label class="mdc-text-field mdc-text-field--outlined" for="new password">User:
+                      <span class="mdc-notched-outline">
+                        <span class="mdc-notched-outline__leading"></span>
+                        <span class="mdc-notched-outline__notch">
+                        </span>
+                        <span class="mdc-notched-outline__trailing"></span>
+                      </span>
+                      <input type="text" class="mdc-text-field__input" aria-labelledby="my-label-id" id="new-password"
+                        name="new password">
+                    </label></th>
 
-    <section id="Teamlist">
-        Team 1: <br>employee 2 employee 5 <br>
-        Team 1's tasks: <br>task 1 task 4 <br>
-        <br>
-        Team 2: <br>employee 1 employee 3 employee 4 <br>
-        Team 2's tasks: <br>task 2 task 3 task 5 <br>
-    </section>
+         <!--button-->
+                <td>
+                  <input class="mdc-button mdc-button--raised" id="submit" type="submit" value="add user and team" />
+                </form>
+              </section></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
 
-    <section id="Newtask">
-      <h1>Add new tasks</h1>
-      <form>
-        <label for="Newtask">Task name:</label>
-        <input class="textinputs" type="text" name="Newtask" id="Newtask">
-        <button id="submit_task" class="mdc-button mdc-button--raised">
-          <span class="mdc-button__label">Add new task</span>
-        </button>
-      </form>
-    </section>
-    <section id="Newuser">
-      <h1>Add new users</h1>
-      <list>
-        <form id="middle">
-          <label for="Username">Username:</label>
-          <input class="textinputs" type="text" name="Username" id="Username">
+  <script>
+    let Tasks = [];
+    let Teams = [];
+    let Employees = [];
 
-          <label fpr="pwd">Password:</label>
-          <input type="password" name="pwd" value="">
+    document.getElementById("task").addEventListener("click", add_task);
+    document.getElementById("new-username").addEventListener("click", add_user);
+    function add_task() {
+      var submitted_task = document.getElementById("The_New_task").value;
+      Tasks.push(submitted_task);
+      var paragraph = document.getElementById("Plannertasks");
+      var task_identify = document.createTextNode(submitted_task);
+      var linebreak = document.createElement("br");
+      paragraph.appendChild(task_identify);
+      paragraph.appendChild(linebreak);
+    }
+    function add_user() {
+      var submitted_user = document.getElementById("The_New_Username").value;
+      Employees.push(submitted_user);
+      var paragraph = document.getElementById("Planneremployee");
+      var user_identify = document.createTextNode(submitted_user);
+      var linebreak = document.createElement("br");
+      paragraph.appendChild(user_identify);
+      paragraph.appendChild(linebreak);
+    }
 
-          <button id="submit_user" class="mdc-button mdc-button--raised">
-            <span class="mdc-button__label">Add new employee</span>
-          </button>
-        </form>
-      </list>
-    </section>
+    Tasks.forEach(function (item) {
+      var paragraph = document.getElementById("Plannertasks");
+      var task_identify = document.createTextNode(item);
+      var linebreak = document.createElement("br");
+      paragraph.appendChild(task_identify);
+      paragraph.appendChild(linebreak);
+    })
+    Employees.forEach(function (item) {
+      var paragraph = document.getElementById("Planneremployee");
+      var employee_identify = document.createTextNode(item);
+      var linebreak = document.createElement("br");
+      paragraph.appendChild(employee_identify);
+      paragraph.appendChild(linebreak);
+    })
+    Teams.forEach(function (item) {
+      var paragraph = document.getElementById("Teamlist");
+      var team_identify = document.createTextNode(item);
+      var linebreak = document.createElement("br");
+      paragraph.appendChild(team_identify);
+      paragraph.appendChild(linebreak);
+      Employees.forEach(function (item) {
+        var employee_identify = document.createTextNode(item);
+        paragraph.appendChild(employee_identify);
+      })
+      var linebreak = document.createElement("br");
+      paragraph.appendChild(linebreak);
+      var paragraph = document.getElementById("Teamlist");
+      var team_identify = document.createTextNode(item);
+      var linebreak = document.createElement("br");
+      paragraph.appendChild(team_identify);
+      paragraph.appendChild(linebreak);
+      Tasks.forEach(function (item) {
+        var employee_identify = document.createTextNode(item);
+        paragraph.appendChild(employee_identify);
+      })
+      var linebreak = document.createElement("br");
+      paragraph.appendChild(linebreak);
+      var linebreak = document.createElement("br");
+      paragraph.appendChild(linebreak);
+    })
 
-    <script>
+  </script>
 
+</body>
 
-
-    </script>
-
-  </body>
 </html>

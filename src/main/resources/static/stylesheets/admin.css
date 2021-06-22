@@ -1,61 +1,84 @@
-  * {
-    background-color: rgba(76, 109, 175);
-    color: white;
-  }
-
-  section#Plannertasks {
-    font-size: 30px;
-    width: 10%;
-    float: left;
-    padding-left: 30%;
-  }
-
-  section#Planneremployee {
-    font-size: 30px;
-    width: 35%;
-    float: right;
-    padding-left: 25%;
-  }
-
-  section#Teamlist {
-    font-size: 30px;
-    width: 60%;
-    padding-top: 250px;
-    padding-left: 40%
-  }
-
-  form {
-    width: 60%;
-    color: white;
-    padding-left: 40%
-  }
-
-  form#middle {
-    width: 70%;
-    color: white;
-    padding-left: 30%;
-    padding-bottom: 100px;
-  }
-
-  input {
-    background-color: white;
-    color: black;
-  }
-
-  h1 {
-    text-align: center;
-    width: 70%;
-    margin-left: 15%;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    background-color: rgba(136, 159, 255);
-  }
-
-  header h1 {
-    text-align: center;
-    width: 100%;
-    margin-left: 0px;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    background-color: rgba(136, 159, 255);
-  }
+* {
+  text-decoration-style: none !important;
+  margin-top: 2px;
+  margin-bottom: 10px;
+}
+body {
+  margin-top: 0px;
+  background-color: rgba(76, 109, 175);
+  color: white;
+}
+#username {
+  color: white;
+  text-shadow: 1px 1px #000000;
+}
+#password {
+  color: white;
+  text-shadow: 1px 1px #000000;
+}
+section#Plannertasks {
+  font-size: 30px;
+  width: 10%;
+  float: left;
+  padding-left: 30%;
+}
+section#Planneremployee {
+  font-size: 30px;
+  width: 35%;
+  float: right;
+  padding-left: 25%;
+}
+section#Teamlist {
+  font-size: 30px;
+  width: 60%;
+  padding-top: 250px;
+  padding-left: 40%;
+}
+form {
+  width: 60%;
+  color: white;
+  padding-left: 40%;
+  margin-bottom: 5px;
+}
+form#middle {
+  width: 70%;
+  color: white;
+  padding-left: 30%;
+  padding-bottom: 100px;
+}
+input {
+  background-color: white;
+  color: white;
+  margin-left: 3px;
+}
+h1 {
+  text-align: center;
+  width: 70%;
+  margin-left: 15%;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color: rgba(136, 159, 255);
+}
+header h1 {
+  text-align: center;
+  width: 100%;
+  margin-left: 0px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color: rgba(136, 159, 255);
+}
+.mdc-floating-label {
+  color: rgb(0, 255, 76);
+}
+.mb {
+  margin-top: 5px;
+}
+#eye {
+  margin-left: 183px;
+  margin-top: -0px;
+  color: black;
+  opacity: 40%;
+}
+.mdc-data-table {
+  display: inline-table !important;
+}
